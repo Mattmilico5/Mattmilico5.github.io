@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #332b36;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.entrada {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.entrada:hover {
+    transform: scale(1.05);
+}
+
+.entrada img {
+    max-width: 100%;
+}
+.reserva {
+    margin: 20px auto;
+    max-width: 4000px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.reserva form {
+    display: flex;
+    flex-direction: column;
+    grid-column-gap      : 20px;
+    grid-row-gap         : 30px;  
+    background : #fff;
+    margin     : 0 auto;  
+   }
+  
+ input, textarea {
+     padding: 5px; /* Separamos la letra del interior (contenido) en los inputs de los bordes */
+ }
+
+  img {
+    max-width: 50%;
+    height: auto;
+  }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zarado</title>
+    <link rel="stylesheet" type="text/css" href="/zarado/styles/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/zarado/images/Logo.png" alt="Entrada 1">
+            <p>¡Descubre nuestros deliciosos platos!</p>
+        </div>
+    </header>
+    <div class="container">
+        <section class="entrada">
+            <img src="/zarado/images/Aperitivos.jpg" alt="Entrada 1">
+            <h2>Aperitivos</h2>
+            <p>Disfruta de nuestro exquisitas aperitivos, preparados con ingredientes frescos y de alta calidad.</p>
+        </section>
+        <section class="entrada">
+            <img src="/zarado/images/Entradas.jpg" alt="Entrada 2">
+            <h2>Entradas</h2>
+            <p>Descubre una variedad de sabores insospechada con una de nuestras entrada gourmet </p>
+        </section>
+        <section class="entrada">
+            <img src="/zarado/images/PlatoFuerte.jpg" alt="Entrada 3">
+            <h2>Platos fuertes</h2>
+            <p>Disfruta de una experiencia gastronomica unica e impactante</p>
+        </section>
+        <section class="entrada">
+            <img src="/zarado/images/Postre.jpg" alt="Entrada 3">
+            <h2>Postres</h2>
+            <p>Termina tu comida con nuestros deliciosos postres caseros, una verdadera tentación para tu paladar.</p>
+        </section>
+    </div>
+    
+    <div class="reserva">
+        <h2>Reserva una mesa</h2>
+        <form action="procesar_reserva.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="fecha">Fecha de Reserva:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <label for="hora">Hora de Reserva:</label>
+            <input type="time" id="hora" name="hora" required>
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            <input type="submit" value="Reservar">
+        </form>
+    </div>
+</body>
+</html>
