@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparación de Números</title>
+</head>
+<body>
+  <script>
+    // Pega aquí el código JavaScript
+    const numero1 = parseFloat(prompt("Ingrese el primer número:"));
+    const numero2 = parseFloat(prompt("Ingrese el segundo número:"));
+
+    if (isNaN(numero1) || isNaN(numero2)) {
+      console.log("Por favor, ingrese números válidos.");
+    } else {
+      if (numero1 > numero2) {
+        console.log(`El número ${numero1} es mayor que ${numero2}.`);
+      } else if (numero2 > numero1) {
+        console.log(`El número ${numero2} es mayor que ${numero1}.`);
+      } else {
+        console.log("Los números son iguales.");
+      }
+    }
+  </script>
+</body>
+</html>
